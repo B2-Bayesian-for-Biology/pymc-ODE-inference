@@ -1,2 +1,9 @@
 # ignore folders
 /pymc-ode
+
+
+# system files
+.DS_Store
+
+
+notebooks/.ipynb_checkpoints/
