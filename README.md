@@ -40,7 +40,7 @@ Here is an example of the modeled cell growth using Slice sampler for parameters
 
 <p align="center">
   <picture>
-    <img src="figures/posterior-nuts-slice.png" alt="posterior-example"/>
+    <img src="figures/trace_sameinit_compound_sampler.png" alt="posterior-example"/>
   </picture>
 </p>
 
