@@ -44,6 +44,24 @@ Here is an example of the modeled cell growth using Slice sampler for parameters
   </picture>
 </p>
 
+
+
+## FAQ
+- Language and implementation: Pymc
+- ODE solver: C-api implementation of numpy/scipy.
+- Error Model: Half Gaussian model; assumped independence of points, multiplicative likelihood, compared log(data)  with log(model)
+- Convergence tests: Gelman rubin, Autocorrelation of chains, geweke.
+- Post processing: burn = 2000 (not needed that much); thinning: minimal requirements for NUTS, MetropolisZ: needed.
+
+
+## Review:
+Here's the convention we used (for now).
+- init_vary: Sampled Initial conditions.
+- init_fixed: Initial condition fixed from data. $N_0 = 600$.
+- You can find chains saved in [results](./results/)
+- You can find plots saved in [figures](./figures/)
+
+
 ## Contributions.
 - Current contributions by [Raunak Dey](https://sites.google.com/view/raunak-dey/home) at UMD.
 - Part of the big-project led by [David Talmy](https://eeb.utk.edu/people/david-talmy/).
